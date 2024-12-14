@@ -1,0 +1,122 @@
+/* General Container Styling */
+.chat-container {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    max-width: 700px;
+    margin: 10 px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .chat-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  /* Chat Messages Styling */
+  .chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  /* Individual Message Styling */
+  .chat-message {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    background: #e6f7ff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-message:nth-child(odd) {
+    align-self: flex-end;
+    background: #f1f0f0;
+  }
+  
+  .message-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .message-time {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+  }
+  
+  /* No Feedback Message */
+  .no-feedback {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 800px) {
+    .chat-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 15px;
+    }
+  
+    .chat-message {
+      max-width: 90%;
+    }
+  
+    .message-text {
+      font-size: 13px;
+    }
+  
+    .message-time {
+      font-size: 11px;
+    }
+  }
+
+  .chat-container .password-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .chat-container .password-container .form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chat-container .password-container .password-input, .chat-container .password-container .username-input {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .chat-container .password-container .password-submit {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .chat-container .password-container .password-submit:hover {
+    background-color: #45a049;
+  }
+  
+  

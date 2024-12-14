@@ -1,0 +1,60 @@
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+.logo p{
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(90, 87, 87);
+}
+.logo p span{
+    font-size: 14px;
+    text-align: start;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.Login-signup{
+    background-color: white;
+    width: 113px;
+    height: 42px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.Login-signup:active,.Login-signup:hover{
+    background-color: rgb(244, 242, 242);
+    cursor: pointer;
+}
+
+@media(max-width:580px) {
+    .Navbar{
+        height: 100px;
+        margin-top: 0;
+    }
+    .logo{
+       flex-direction: column;
+       gap:0;
+    }
+    .logo p{
+        font-size: medium;
+        font-weight: bold;
+    }
+    .logo p span{
+        font-size: 12px;
+    }
+}

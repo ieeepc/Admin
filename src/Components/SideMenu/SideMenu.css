@@ -1,0 +1,67 @@
+.sidemenu {
+    background-color: white;
+    height: auto;
+    width: 220px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidemenu button {
+    width: 180px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    color: rgb(58, 58, 247);
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.sidemenu button:hover {
+    transform: scale(1.04);
+    background-color: rgb(236, 236, 236);
+}
+
+@media (max-width: 800px) {
+    .sidemenu {
+        flex-direction: row;
+        height: auto;
+        width: 99%;
+        padding: 10px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 5px 2px;
+    }
+    .sidemenu button {
+        font-size: 14px;
+        width: 130px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .sidemenu {
+        width: 100%;
+        padding: 5px;
+        flex-direction: row;
+        height: auto;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .sidemenu button {
+        width: 110%;
+        font-size: 12px;
+        height: 35px;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
