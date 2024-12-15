@@ -121,6 +121,7 @@ const UpcomingEvent = () => {
           value={formData.name}
           onChange={handleChange}
         />
+        <label>Event Date : </label>
         <input
           type="date"
           name="date"
@@ -141,6 +142,7 @@ const UpcomingEvent = () => {
           value={formData.registerLink}
           onChange={handleChange}
         />
+        <label>Registration last date : </label>
         <input
           type="date"
           name="lastDate"
