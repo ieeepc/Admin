@@ -32,11 +32,11 @@ const Login = () => {
         localStorage.setItem('auth-token', responseData.token);
         setLoggedIn(true);
       } else {
-        alert(responseData.message || 'Error logging in');
+        // alert(responseData.message || 'Error logging in');
       }
     } catch (err) {
       console.error('Error during login:', err);
-      alert('An error occurred while logging in.');
+      // alert('An error occurred while logging in.');
     }
   };
 
